@@ -3,17 +3,26 @@ using System.Collections;
 
 public class FieldAssistant : MonoBehaviour {
 
+	public static FieldAssistant main;
+
+	void  Awake (){
+		main = this;
+	}
+
 	// Use this for initialization
 	void Start () {
 	
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	// Field generator
+	public void  CreateField (){
 	}
 }
 
 public enum Limitation {
 	Time
+}
+
+public enum FieldTarget {
+	Score = 0
 }
